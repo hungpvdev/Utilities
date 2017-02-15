@@ -7,7 +7,7 @@ alias m2cc='rm -rf var/cache/ var/generation/ var/view_preprocessed/'
 alias m98='./n98-magerun2.phar'
 alias m98hint='m98 dev:template-hints \ && m98 dev:template-hints-blocks \ && m2c'
 alias m98cc='m98 cache:clean'
-alias m2down='m2cc \ m98 sys:setup:downgrade-versions'
+alias m2down='m2cc \ && m98 sys:setup:downgrade-versions' \ m2up \m2c
 
 #MYSQL
 alias sql='mysql -uroot -padmin123'
