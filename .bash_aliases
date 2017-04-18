@@ -15,7 +15,7 @@ alias sql='mysql -uroot -padmin123'
 
 #OTHERS
 alias cmvp777='sudo chmod -R 777 var/ pub/'
-
+alias getm98='wget https://files.magerun.net/n98-magerun2.phar && chmod +x ./n98-magerun2.phar'
 
 #GIT
 alias gs='git status'
