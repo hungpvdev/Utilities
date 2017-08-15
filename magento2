@@ -1,0 +1,13 @@
+Permission for local only
+sudo setfacl -dR -m u:hungpham:rwX -m u:www-data:rwX var pub/static pub/media
+sudo setfacl -R -m u:hungpham:rwX -m u:www-data:rwX var pub/static pub/media
+
+sudo find var pub/static pub/media -type d -exec chmod 0777 {} \;
+sudo find var pub/static pub/media -type f -exec chmod 0666 {} \;
+
+Permission for server only
+find var vendor pub/static pub/media app/etc -type f -exec chmod u+w {} \;
+find var vendor pub/static pub/media app/etc -type d -exec chmod u+w {} \;
+
+Add execute permission bin/magento
+chmod u+x bin/magento
