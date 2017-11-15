@@ -2,7 +2,7 @@
 alias m2='php bin/magento'
 alias m2c='m2 cache:flush'
 alias m2up='m2 setup:upgrade'
-alias m2cc='rm -rf var/cache/ var/generation/ var/view_preprocessed/'
+alias m2cc='rm -rf var/cache/ var/generation/ var/view_preprocessed/ generated/'
 
 alias m98='./n98-magerun2.phar'
 alias m98hint='m98 dev:template-hints \ && m98 dev:template-hints-blocks \ && m2c'
